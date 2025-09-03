@@ -106,6 +106,8 @@ snakemake \
     --configfile ${configfile} \
 	-d ${working_dir} \
 	--cores ${cores_num} \
+	--use-conda \
+	--use-singularity \
 	--rerun-incomplete \
 	--nolock
 ```
