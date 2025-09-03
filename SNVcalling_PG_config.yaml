@@ -1,0 +1,40 @@
+# config.yaml
+
+# Absolute path to the pangenome gfa file
+graph_gfa: ""
+
+# Reference haplotype code that pangenome graph built on
+haplotype_code: ""
+
+# Absolute path to reference haplotype genome file
+haplotype_genome: ""
+
+# Fastq file suffix
+fastq_suffix: ".fq.gz"
+
+# fastp parameters
+qualified_quality_phred: 20
+unqualified_percent_limit: 40
+trim_front: 10
+
+# Kmer length for kmc
+kmer_length: 19
+
+# BCFtools filter threshold
+core:
+    missingrate: 0.2
+    maf: 0.05
+
+# Software environment configuration
+conda_env:
+    vg_env: ""
+    glnexus_env: ""
+
+singularity:
+    deepvariant: ""
+
+sample:
+    - "sample1"
+    - "sample2"
+    - "sample3"
+    - "..."
